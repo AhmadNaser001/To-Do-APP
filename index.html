@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>My Task</h1>
+        <button class="add-task-button" title="Add Task" id="add-task-button">
+          <i class="bx bx-plus"></i>
+        </button>
+      </div>
+      <div class="tasks" id="tasks">
+        <div class="task" id="task">
+          <div class="task-title">
+            <h2>Task 1</h2>
+            <div class="task-date">2023-10-01</div>
+          </div>
+          <div class="task-actions">
+            <button class="edit-button" id="edit-button">
+              <i class="bx bx-edit"></i>
+            </button>
+            <button class="done-button" id="done-button">
+              <i class="bx bx-check"></i>
+            </button>
+            <button class="delete-button" id="delete-button">
+              <i class="bx bx-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2 id="title-popup">Add Task</h2>
+        <div class="data-form">
+          <input
+            type="text"
+            id="task-title"
+            placeholder="Task Title"
+            required
+          />
+        </div>
+        <div class="btn-action">
+          <button class="save-button" id="save-button">Save</button>
+          <button class="update-button" id="update-button" style="display: none;">Update</button>
+          <button class="cancel-button" id="close-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-check" >
+      <div class="popup-content">
+        <h2>Are you Sure</h2>
+        <div class="data-form">
+        <div class="btn-action">
+          <button class="delete-button" id="accept-delete">Delete</button>
+          <button class="cancel-button" id="cancel-delete">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
